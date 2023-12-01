@@ -118,10 +118,10 @@ async def add_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
  
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('6344154732:AAEKy887YdJxY4xq0WgktBOGUMdWfWuusac').build()
+    application = ApplicationBuilder().token('@@@').build()
     application.add_handler(CommandHandler('start',start))
     application.add_handler(CommandHandler('events',list_events))
-    #application.add_handler(CommandHandler('addevent',add_event))
+    application.add_handler(CommandHandler('addevent',add_event))
     application.run_polling()
 
 
